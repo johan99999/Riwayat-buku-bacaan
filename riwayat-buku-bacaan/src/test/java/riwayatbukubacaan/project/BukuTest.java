@@ -17,4 +17,35 @@ public class BukuTest {
         this.penulis = penulis;
         this.tanggalDitambahkan = tanggalDitambahkan;
     }
+    public int getNo() {
+        return no;
+    }
+
+    public void setNo(int no) {
+        this.no = no;
+    }
+
+    public String getNamaBuku() {
+        return namaBuku;
+    }
+
+    public void setNamaBuku(String namaBuku) {
+        this.namaBuku = namaBuku;
+    }
+
+    public String getPenulis() {
+        return penulis;
+    }
+
+    public void setPenulis(String penulis) {
+        this.penulis = penulis;
+    }
+
+    public Timestamp getTanggalDitambahkan() {
+        return tanggalDitambahkan;
+    }
+
+    public void setTanggalDitambahkan(Timestamp tanggalDitambahkan) {
+        this.tanggalDitambahkan = tanggalDitambahkan;
+    }
 }
