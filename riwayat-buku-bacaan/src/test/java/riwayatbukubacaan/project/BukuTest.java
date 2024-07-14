@@ -1,27 +1,27 @@
 package riwayatbukubacaan.project;
 
-import org.junit.jupiter.api.Test;
-
 import java.sql.Timestamp;
 
 
 public class BukuTest {
-    private int no;
+    private String no;
     private String namaBuku;
     private String penulis;
-    private Timestamp tanggalDitambahkan;
+    private String tipeDokumen;
+    private String tanggalDitambahkan;
 
-    public BukuTest (int no, String namaBuku, String penulis, Timestamp tanggalDitambahkan) {
+    public BukuTest (String no, String namaBuku, String penulis, String tipeDokumen, String tanggalDitambahkan) {
         this.no = no;
         this.namaBuku = namaBuku;
         this.penulis = penulis;
+        this.tipeDokumen = tipeDokumen;
         this.tanggalDitambahkan = tanggalDitambahkan;
     }
-    public int getNo() {
+    public String getNo() {
         return no;
     }
 
-    public void setNo(int no) {
+    public void setNo(String no) {
         this.no = no;
     }
 
@@ -41,11 +41,19 @@ public class BukuTest {
         this.penulis = penulis;
     }
 
-    public Timestamp getTanggalDitambahkan() {
+    public String getTipeDokumen() {
+        return tipeDokumen;
+    }
+
+    public void setTipeDokumen(String tipeDokumen) {
+        this.tipeDokumen = tipeDokumen;
+    }
+
+    public String getTanggalDitambahkan() {
         return tanggalDitambahkan;
     }
 
-    public void setTanggalDitambahkan(Timestamp tanggalDitambahkan) {
+    public void setTanggalDitambahkan(String tanggalDitambahkan) {
         this.tanggalDitambahkan = tanggalDitambahkan;
     }
 }
